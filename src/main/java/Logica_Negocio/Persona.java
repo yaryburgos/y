@@ -14,16 +14,16 @@ public class Persona {
     public String Nombre;
     public int Año_de_Nacimiento;
     public int Cedula;
-
+public String sexo;
     //constructor no parametrizado
     public Persona() {
     }
     
     //construtor parametrizado
 
-    public Persona(String Nombre,  int Año_de_Nacimiento, int Cedula) {
+    public Persona(String Nombre,  int Año_de_Nacimiento, int Cedula, String sexo ) {
         this.Nombre = Nombre;
-       
+       this.sexo= sexo;
         this.Año_de_Nacimiento = Año_de_Nacimiento;
         this.Cedula = Cedula;
     }
@@ -32,7 +32,13 @@ public class Persona {
 
     public void setNombre(String Nombre) {
         this.Nombre = Nombre;
+        
     }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+    
     
     public void setAño_de_Nacimiento(int Año_de_Nacimiento) {
         this.Año_de_Nacimiento = Año_de_Nacimiento;
@@ -46,6 +52,10 @@ public class Persona {
 
     public String getNombre() {
         return Nombre;
+    }
+
+    public String getSexo() {
+        return sexo;
     }
 
     public int getAño_de_Nacimiento() {

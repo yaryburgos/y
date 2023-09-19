@@ -20,6 +20,7 @@ public class Main {
     //Declarando variables
     public static void main(String[] args) {
         String Nombre="";
+        String sexo="";
         int Año_de_Nacimiento=0;
         int Cedula=0;
         
@@ -36,6 +37,10 @@ public class Main {
         System.out.println("Digite en nombre de la persona");
         Nombre = scan.nextLine();
         objpersona.setNombre(Nombre);
+        
+              System.out.println("Digite el sexo de la persona");
+        sexo = scan.nextLine();
+        objpersona.setSexo(sexo);
         
         System.out.println("Digite el año en que nacio la persona");
         Año_de_Nacimiento = scan.nextInt();
@@ -54,6 +59,7 @@ public class Main {
         
         // impresion por pantalla
         System.out.println("El nombre de la persona es:"+"\t"+ objpersona.getNombre());
+        System.out.println("El sexo de la persona es:"+"\t"+ objpersona.getSexo());
         System.out.println("El año en el que nacio la persona es:"+"\t"+ objpersona.getAño_de_Nacimiento());
         System.out.println("El numero de cedula de la persona es:"+"\t"+ objpersona.getCedula());
         System.out.println("La edad que tiene actualmente la persona es:"+"\t"+ Resultado);
